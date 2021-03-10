@@ -74,6 +74,11 @@ void mine() {
 		}
 		cout << endl;
 	}
+	//release memory
+	for (int i=0; i < row + 2; i++) {
+		delete [] map[i];
+	}
+	delete [] map;
 	return;
 }
 
