@@ -13,7 +13,7 @@ int main()  {
 
 Lỗi: 
 	- Khai báo con trỏ s không an toàn. Khi khai báo mà chưa sử dụng ngay
-ta cần gán nó cho NULL hoặc nullptr (worked in VS2019) để tránh dangling pointer.
+ta cần gán nó cho NULL hoặc nullptr (since C++11) để tránh dangling pointer.
 	- *s = foo gây ra lỗi tham chiếu đến con trỏ NULL. Ta cần dynamically alocate 
 memory cho s trước.
 	- param 2 của hàm printf() phải là địa chỉ của 1 string, nhưng s là 1 level-2 pointer
